@@ -5,6 +5,7 @@ __date__ = "01.12.2023"
 if __name__ == '__main__':
     filename = "input.txt"
     # Day 01 Part One
+    # Idea: Find first and last digit character in each line, form a two-digit number and sum up these numbers.
     with open(filename) as file:
         total = 0
         for line in file:
@@ -21,6 +22,8 @@ if __name__ == '__main__':
         print('Solution Part One: ', total)
 
     # Day 01 Part Two
+    # Idea: Find first and last digit character in each line, or an equivalent text representation for the digit
+    #       Then, form a two-digit number and sum up these numbers.
     total = 0
     with open(filename) as file:
         for line in file:
